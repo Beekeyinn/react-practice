@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "SEGA LOGO FONT";
+  src: url("../css/font/SEGA.TTF") format("truetype");
+}
+
+.title {
+  font-family: "SEGA LOGO FONT";
+  font-weight: normal;
+  font-size: 3rem;
+  color: linear-gradient(to right, #5779e9 0%, #3961e4 100%);
+}

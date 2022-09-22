@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { searchUser, userApi } from "../API/users";
-import CardList from "../hoc/CardList";
-import Loading from "./Loading";
-import SearchBox from "./SearchBox";
+import CardList from "../component/CardList";
+import ErrorBoundary from "../component/ErrorBoundary";
+import Loading from "../component/Loading";
+import Scroll from "../component/Scroll";
+import SearchBox from "../component/SearchBox";
+import "../css/app.css";
 const App = () => {
   const [robots, setRobots] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -32,16 +35,20 @@ const App = () => {
   };
   return (
     <div>
-      <div className="dt w-100 vh-50 bg-light-green">
+      <div className="dt w-100 vh-30">
         <div className="dtc tc v-mid">
-          <h1>RoboFriends</h1>
+          <h1 className="title">RoboFriends</h1>
           <SearchBox handleChange={handleChange} />
         </div>
       </div>
       {loading ? (
         <Loading />
-      ) : robots.length !== 0 ? (
-        <CardList robots={robots} />
+      ) : robots.length ? (
+        <Scroll>
+          <ErrorBoundary>
+            <CardList robots={robots} />
+          </ErrorBoundary>
+        </Scroll>
       ) : (
         <h1>No Data</h1>
       )}

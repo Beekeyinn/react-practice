@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-practice/static/css/main.115fc056.css",
+    "main.js": "/react-practice/static/js/main.dd3226d4.js",
+    "static/js/787.32032a02.chunk.js": "/react-practice/static/js/787.32032a02.chunk.js",
+    "static/media/SEGA.TTF": "/react-practice/static/media/SEGA.8a619f32417a0fe72728.TTF",
+    "index.html": "/react-practice/index.html",
+    "main.115fc056.css.map": "/react-practice/static/css/main.115fc056.css.map",
+    "main.dd3226d4.js.map": "/react-practice/static/js/main.dd3226d4.js.map",
+    "787.32032a02.chunk.js.map": "/react-practice/static/js/787.32032a02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.115fc056.css",
+    "static/js/main.dd3226d4.js"
+  ]
+}
